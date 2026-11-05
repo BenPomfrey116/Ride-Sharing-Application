@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MakeBookingForm">
+  <grid id="27dc6" binding="makeBookingPanel" layout-manager="GridLayoutManager" row-count="15" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="611" height="739"/>
+    </constraints>
+    <properties>
+      <visible value="true"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="a07b1" class="javax.swing.JLabel" binding="header">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Make new booking"/>
+        </properties>
+      </component>
+      <hspacer id="e1bdf">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="bc6d4">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="186cb" class="javax.swing.JLabel" binding="airportLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="46d97"/>
+          <text value="Airport:"/>
+        </properties>
+      </component>
+      <component id="46d97" class="javax.swing.JComboBox" binding="airportComboBox">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Select"/>
+            <item value="Gatwick"/>
+            <item value="Heathrow"/>
+            <item value="Luton"/>
+          </model>
+        </properties>
+      </component>
+      <component id="6ae61" class="javax.swing.JLabel" binding="pickupLocationLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="cc042"/>
+          <text value="Pickup location:"/>
+        </properties>
+      </component>
+      <component id="cc042" class="javax.swing.JComboBox" binding="pickupComboBox">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="200" height="-1"/>
+            <preferred-size width="200" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Select"/>
+            <item value="Canterbury"/>
+            <item value="Dover"/>
+            <item value="Whitstable"/>
+            <item value="Brighton"/>
+          </model>
+        </properties>
+      </component>
+      <component id="b4b8f" class="javax.swing.JLabel" binding="dateLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="c2e68"/>
+          <text value="Date (dd/mm/yyyy):"/>
+        </properties>
+      </component>
+      <grid id="bae78" binding="datePanel" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="6e4c0" class="javax.swing.JTextField" binding="monthTextField" default-binding="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value="Month"/>
+            </properties>
+          </component>
+          <component id="cf13d" class="javax.swing.JTextField" binding="yearTextField" default-binding="true">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="75" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value="Year"/>
+            </properties>
+          </component>
+          <component id="c2e68" class="javax.swing.JTextField" binding="dayTextField" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value="Day"/>
+            </properties>
+          </component>
+          <component id="1048a" class="javax.swing.JLabel" binding="dateSlash1Txt">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="/"/>
+            </properties>
+          </component>
+          <component id="d1c5e" class="javax.swing.JLabel" binding="dateSlashTxt2">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="/"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="e341f" class="javax.swing.JLabel" binding="timeLabel">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="18349"/>
+          <text value="Time:"/>
+        </properties>
+      </component>
+      <grid id="2a0b5" binding="timePanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="4fe34" class="javax.swing.JTextField" binding="minutesTextField">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value="Minute"/>
+            </properties>
+          </component>
+          <component id="18349" class="javax.swing.JTextField" binding="hoursTextField">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value="Hour"/>
+            </properties>
+          </component>
+          <component id="b068f" class="javax.swing.JLabel" binding="timeColonTxt">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=":"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="beeb7" class="javax.swing.JLabel" binding="luggageLabel">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="e66f"/>
+          <text value="Number of bags:"/>
+        </properties>
+      </component>
+      <component id="e66f" class="javax.swing.JTextField" binding="noBagsTextField">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="50" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <toolTipText value="Number of bags"/>
+        </properties>
+      </component>
+      <component id="3282e" class="javax.swing.JButton" binding="backButton">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="&lt; Back"/>
+        </properties>
+      </component>
+      <component id="be2b3" class="javax.swing.JButton" binding="payButton">
+        <constraints>
+          <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="Pay"/>
+        </properties>
+      </component>
+      <component id="6da6e" class="javax.swing.JLabel" binding="invalidPickupMsg">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <foreground color="-1748915"/>
+          <text value="Please select a pickup location"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="ba2eb" class="javax.swing.JLabel" binding="invalidDateMsg">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <foreground color="-1748915"/>
+          <text value="Invalid Date"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="93d35" class="javax.swing.JLabel" binding="invalidTimeMsg">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <foreground color="-1748915"/>
+          <text value="Invalid Time"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="e80d2" class="javax.swing.JLabel" binding="invalidBagsMsg">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <foreground color="-1748915"/>
+          <text value="Number of bags too high"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="43710" class="javax.swing.JLabel" binding="invalidAirportMsg">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <foreground color="-1748915"/>
+          <text value="Please select an airport"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="f4232" class="javax.swing.JButton" binding="createBookingButton">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Create Booking"/>
+        </properties>
+      </component>
+      <component id="7075a" class="javax.swing.JTextPane" binding="durationText">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <text value="__ hours __ minutes"/>
+        </properties>
+      </component>
+      <component id="df30c" class="javax.swing.JLabel" binding="durationLabel">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Estimated Duration:"/>
+        </properties>
+      </component>
+      <component id="18238" class="javax.swing.JLabel" binding="vehicleTypeLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="18349"/>
+          <text value="Vehicle type:"/>
+        </properties>
+      </component>
+      <component id="d5bc2" class="javax.swing.JComboBox" binding="vehicleTypeComboBox">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="200" height="-1"/>
+            <preferred-size width="200" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Select"/>
+            <item value="Standard"/>
+            <item value="Premium"/>
+          </model>
+        </properties>
+      </component>
+      <component id="e7181" class="javax.swing.JLabel" binding="invalidVehicleTypeMsg">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <foreground color="-1748915"/>
+          <text value="Please select a vehicle type"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="c9b1c" class="javax.swing.JButton" binding="paymentDetailsButton">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <text value="Enter payment details"/>
+        </properties>
+      </component>
+      <component id="58b07" class="javax.swing.JLabel" binding="paymentLabel">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Payment details:"/>
+        </properties>
+      </component>
+      <component id="c552c" class="javax.swing.JTextPane" binding="paymentDetailsText">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="80"/>
+            <preferred-size width="250" height="80"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <font name="Courier New"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="82124" class="javax.swing.JLabel" binding="priceLabel">
+        <constraints>
+          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Price:"/>
+        </properties>
+      </component>
+      <component id="9cfb8" class="javax.swing.JTextPane" binding="priceText">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="140"/>
+            <preferred-size width="250" height="140"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <font name="Courier New"/>
+          <text value="Cost Breakdown:"/>
+        </properties>
+      </component>
+      <component id="c04e1" class="javax.swing.JComboBox" binding="paymentTypeComboBox">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="200" height="-1"/>
+            <preferred-size width="200" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Select"/>
+            <item value="Credit card"/>
+            <item value="Bank transfer"/>
+          </model>
+        </properties>
+      </component>
+      <component id="8f5fe" class="javax.swing.JLabel" binding="paymentTypeLabel">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Payment type:"/>
+        </properties>
+      </component>
+      <component id="eeac8" class="javax.swing.JLabel" binding="invalidPaymentTypeMsg">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <foreground color="-1748915"/>
+          <text value="Please select a payment type"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="35ec" class="javax.swing.JLabel" binding="invalidPaymentDetailsMsg">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <foreground color="-1748915"/>
+          <text value="Please enter your payment details"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
